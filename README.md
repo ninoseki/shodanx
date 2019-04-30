@@ -39,7 +39,7 @@ api.host.search("ftp", port: 21, facets: { country: 10 })
 api.host.tokens("nginx")
 ```
 
-See `/specs` for more.
+See `/spec` for more.
 
 ## Supported API endpoints
 
