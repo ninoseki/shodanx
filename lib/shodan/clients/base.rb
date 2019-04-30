@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require "json"
+require "net/https"
+require "uri"
+
 module Shodan
   module Clients
     class Base
