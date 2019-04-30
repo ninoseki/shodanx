@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shodan.io/shodan/query?key=<SHODAN_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.shodan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 30 Apr 2019 01:10:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"matches": [{"votes": 2, "description": "", "tags": [""], "timestamp":
+        "2019-04-29T09:26:21.743000", "title": "Country:\"CN\"", "query": "Server:
+        SQ-WEBCAM country:\"DE\" http.favicon.hash:277590349"}, {"votes": 2, "description":
+        "", "tags": [""], "timestamp": "2019-04-28T08:22:55.874000", "title": "12",
+        "query": "hxb"}, {"votes": 1, "description": "Charging adapters for EVs",
+        "tags": [""], "timestamp": "2019-04-26T20:59:04.752000", "title": "Keba Wallboxes",
+        "query": "http.title:wallbox"}, {"votes": 5, "description": "", "tags": [""],
+        "timestamp": "2019-04-25T21:43:26.940000", "title": "brazil", "query": "dreambox
+        port:\"80\""}, {"votes": 2, "description": "https://github.com/Nhoya/MycroftAI-RCE.git",
+        "tags": ["\u043d\u0430\u0432\u0430\u043b\u044c\u043d\u044b\u0439"], "timestamp":
+        "2019-04-25T16:56:18.978000", "title": "Mycroft", "query": "Mycroft"}, {"votes":
+        3, "description": "Open tvheadend servers", "tags": [""], "timestamp": "2019-04-24T13:42:17.172000",
+        "title": "tvheadend", "query": "Server: HTS/tvheadend 200"}, {"votes": 3,
+        "description": "", "tags": [""], "timestamp": "2019-04-24T08:16:19.746000",
+        "title": "poland", "query": "cccam"}, {"votes": 3, "description": "Search
+        for RDP on devices connected to IU", "tags": [""], "timestamp": "2019-04-23T19:35:13.613000",
+        "title": "RDP IU", "query": "port:\"3389\" org:\"Indiana University\""}, {"votes":
+        1, "description": "", "tags": ["index of"], "timestamp": "2019-04-23T08:00:30.640000",
+        "title": "INDEX", "query": "230 asus port:21 country:RU"}, {"votes": 1, "description":
+        "", "tags": [""], "timestamp": "2019-04-22T23:28:34.815000", "title": "pgsql-US",
+        "query": "port:5432 PostgreSQL country:\"US\""}], "total": 5512}'
+    http_version: 
+  recorded_at: Tue, 30 Apr 2019 01:19:20 GMT
+recorded_with: VCR 4.0.0

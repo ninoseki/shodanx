@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.shodan.io/shodan/alert?key=<SHODAN_API_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"name":"Test alert","filters":{"ip":"198.20.88.0/24"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.shodan.io
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 30 Apr 2019 07:28:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"triggers": {}, "name": "Test alert", "created": "2019-04-30T07:37:45.241934",
+        "expires": 0, "expiration": null, "filters": {"ip": ["198.20.88.0/24"]}, "id":
+        "GAMHXP3VXL0VS2FX", "size": 256}'
+    http_version: 
+  recorded_at: Tue, 30 Apr 2019 07:37:22 GMT
+recorded_with: VCR 4.0.0
