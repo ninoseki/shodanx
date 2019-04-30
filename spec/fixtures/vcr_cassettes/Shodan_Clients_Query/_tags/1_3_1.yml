@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shodan.io/shodan/query/tags?key=<SHODAN_API_KEY>&size=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.shodan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 30 Apr 2019 01:13:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"matches": [{"count": 188, "value": "webcam"}, {"count": 147, "value":
+        "cam"}, {"count": 134, "value": "camera"}, {"count": 87, "value": "router"},
+        {"count": 81, "value": "ip"}, {"count": 74, "value": "server"}, {"count":
+        74, "value": "scada"}, {"count": 74, "value": "ftp"}, {"count": 44, "value":
+        "http"}, {"count": 27, "value": "cisco"}], "total": 6726}'
+    http_version: 
+  recorded_at: Tue, 30 Apr 2019 01:22:14 GMT
+recorded_with: VCR 4.0.0

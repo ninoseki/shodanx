@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shodan.io/shodan/host/count?facets=country:10&key=<SHODAN_API_KEY>&query=nginx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.shodan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 30 Apr 2019 07:07:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"matches": [], "facets": {"country": [{"count": 6513358, "value":
+        "US"}, {"count": 2898482, "value": "CN"}, {"count": 1382328, "value": "DE"},
+        {"count": 845797, "value": "FR"}, {"count": 752064, "value": "RU"}, {"count":
+        515902, "value": "NL"}, {"count": 451995, "value": "GB"}, {"count": 434677,
+        "value": "JP"}, {"count": 411461, "value": "HK"}, {"count": 299241, "value":
+        "IE"}]}, "total": 18372339}'
+    http_version: 
+  recorded_at: Tue, 30 Apr 2019 07:15:59 GMT
+recorded_with: VCR 4.0.0

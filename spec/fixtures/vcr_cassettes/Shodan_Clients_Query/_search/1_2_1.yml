@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shodan.io/shodan/query/search?key=<SHODAN_API_KEY>&query=nginx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.shodan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 30 Apr 2019 01:10:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"matches": [{"votes": 1, "description": "", "title": "nginx", "timestamp":
+        "2018-09-04T15:31:42.836000", "tags": [""], "query": "org:\"Reliance Industries
+        Limited WAN Backbone Interface\" product:\"nginx\""}, {"votes": 1, "description":
+        "", "title": "nginx", "timestamp": "2017-02-22T23:20:07.764000", "tags": [""],
+        "query": "Title:\"nginx\""}, {"votes": 2, "description": "Vuluables Nginx
+        for win32/64", "title": "Nginx", "timestamp": "2012-06-09T09:30:46.645000",
+        "tags": ["nginx", "win32"], "query": "nginx win port:80,22"}, {"votes": 5,
+        "description": "nginx - Webserver", "title": "SUCKUP.de: Mein IT-Blog", "timestamp":
+        "2010-08-05T12:52:46.043000", "tags": ["nginx"], "query": "nginx de country:DE"},
+        {"votes": 2, "description": "Here you can see how many NGINX servers are in
+        the world.", "title": "NGINX servers", "timestamp": "2016-09-11T06:13:24.169000",
+        "tags": ["nginx", "servers"], "query": "\"product:nginx\""}], "total": 5}'
+    http_version: 
+  recorded_at: Tue, 30 Apr 2019 01:19:20 GMT
+recorded_with: VCR 4.0.0
