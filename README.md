@@ -31,12 +31,52 @@ api = Shodan::API.new
 # or you can set it manually
 api = Shodan::API.new(key: "YOUR_API_KEY")
 
+# Shodan Search Methods
 api.host.get_by_ip("104.25.89.97")
 api.host.count("nginx")
 api.host.count("nginx", facets: { country: 10 })
 api.host.search("nginx")
 api.host.search("ftp", port: 21, facets: { country: 10 })
 api.host.tokens("nginx")
+api.ports
+
+# Shodan On-Demand Scanning
+api.protocols
+api.scan.crawl("1.1.1.1")
+api.scan.get_by_id("SCAN_ID")
+
+# Shodan Network Alerts
+api.alert.get_by_id("ALERT_ID")
+api.alert.info
+api.alert.triggers
+api.alert.create(name: "Test alert", ip: "198.20.88.0/24")
+api.alert.delete_by_id("ALERT_ID")
+
+# Shodan Directory Methods
+api.query.list
+api.query.search("nginx")
+api.query.tags
+
+# Account Methods
+api.account.profile
+
+# DNS Methods
+api.dns.resolve("google.com")
+api.dns.reverse("1.1.1.1")
+
+# Utility Methods
+api.tools.http_headers
+api.tools.my_ip
+
+# API Status Methods
+api.info
+
+# Experimental Methods
+api.labs.honeyscore("1.1.1.1")
+
+# Shodan Exploits Methods
+api.exploits.search("python")
+api.exploits.count("python")
 ```
 
 See `/spec` for more.
