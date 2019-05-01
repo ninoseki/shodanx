@@ -1,5 +1,6 @@
 # shodanx
 
+[![Gem Version](https://badge.fury.io/rb/shodanx.svg)](https://badge.fury.io/rb/shodanx)
 [![Build Status](https://travis-ci.org/ninoseki/shodanx.svg?branch=master)](https://travis-ci.org/ninoseki/shodanx)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/shodanx/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/shodanx?branch=master)
 
