@@ -1,0 +1,428 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shodan.io/dns/domain/shodan.io?key=<SHODAN_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.shodan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 02 Jul 2019 21:13:51 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"domain": "shodan.io", "tags": ["ipv6", "spf"], "data": [{"subdomain":
+        "", "type": "NS", "value": "lady.ns.cloudflare.com", "last_seen": "2019-06-30T11:17:42.459369+00:00"},
+        {"subdomain": "", "type": "NS", "value": "ed.ns.cloudflare.com", "last_seen":
+        "2019-06-30T11:17:42.453308+00:00"}, {"subdomain": "", "type": "A", "value":
+        "104.27.75.9", "last_seen": "2019-06-30T11:17:42.470903+00:00"}, {"subdomain":
+        "", "type": "A", "value": "104.27.74.9", "last_seen": "2019-06-30T11:17:42.472731+00:00"},
+        {"subdomain": "", "type": "A", "value": "104.25.89.97", "last_seen": "2019-05-24T10:43:11.712434+00:00"},
+        {"subdomain": "", "type": "A", "value": "104.25.90.97", "last_seen": "2019-05-24T10:43:11.714993+00:00"},
+        {"subdomain": "", "type": "AAAA", "value": "2606:4700:20::681b:4a09", "last_seen":
+        "2019-06-30T11:17:42.474567+00:00"}, {"subdomain": "", "type": "AAAA", "value":
+        "2606:4700:20::6819:5a61", "last_seen": "2019-05-24T10:43:11.716072+00:00"},
+        {"subdomain": "", "type": "AAAA", "value": "2606:4700:20::681b:4b09", "last_seen":
+        "2019-06-30T11:17:42.473480+00:00"}, {"subdomain": "", "type": "AAAA", "value":
+        "2606:4700:20::6819:5961", "last_seen": "2019-05-24T10:43:11.717361+00:00"},
+        {"subdomain": "", "type": "TXT", "value": "v=spf1 ip4:216.117.2.180 include:_spf.google.com
+        ~all", "last_seen": "2019-06-30T11:17:42.464744+00:00"}, {"subdomain": "",
+        "type": "TXT", "value": "MS=87251D03D1B817A70CC370D9FF17FFB7325A0110", "last_seen":
+        "2019-06-30T11:17:42.461692+00:00"}, {"subdomain": "", "type": "TXT", "value":
+        "google-site-verification=BzXlMuKdXSAiX3v-VUo-M_ZZ1VPW3cwptvaIOWWGQ7c", "last_seen":
+        "2019-06-30T11:17:42.463188+00:00"}, {"subdomain": "", "type": "SOA", "value":
+        "ed.ns.cloudflare.com", "last_seen": "2019-06-30T11:17:42.469971+00:00"},
+        {"subdomain": "", "type": "MX", "value": "alt1.aspmx.l.google.com", "last_seen":
+        "2019-06-30T11:17:42.466508+00:00"}, {"subdomain": "", "type": "MX", "value":
+        "aspmx.l.google.com", "last_seen": "2019-06-30T11:17:42.468900+00:00"}, {"subdomain":
+        "", "type": "MX", "value": "alt2.aspmx.l.google.com", "last_seen": "2019-06-30T11:17:42.467438+00:00"},
+        {"subdomain": "*", "type": "A", "value": "216.117.2.180", "last_seen": "2019-06-30T11:17:42.433583+00:00"},
+        {"subdomain": "account", "type": "A", "value": "104.27.74.9", "last_seen":
+        "2019-07-01T09:28:43.967038+00:00"}, {"subdomain": "account", "type": "A",
+        "value": "104.25.90.97", "last_seen": "2019-05-23T02:34:57.586154+00:00"},
+        {"subdomain": "account", "type": "A", "value": "104.27.75.9", "last_seen":
+        "2019-07-01T09:28:43.965565+00:00"}, {"subdomain": "account", "type": "A",
+        "value": "104.25.89.97", "last_seen": "2019-05-23T02:34:57.584627+00:00"},
+        {"subdomain": "account", "type": "AAAA", "value": "2606:4700:20::681b:4b09",
+        "last_seen": "2019-07-01T09:28:43.967844+00:00"}, {"subdomain": "account",
+        "type": "AAAA", "value": "2606:4700:20::6819:5961", "last_seen": "2019-05-23T02:34:57.588373+00:00"},
+        {"subdomain": "account", "type": "AAAA", "value": "2606:4700:20::6819:5a61",
+        "last_seen": "2019-05-23T02:34:57.587263+00:00"}, {"subdomain": "account",
+        "type": "AAAA", "value": "2606:4700:20::681b:4a09", "last_seen": "2019-07-01T09:28:43.967451+00:00"},
+        {"subdomain": "api", "type": "A", "value": "216.117.2.180", "last_seen": "2019-07-01T04:42:22.604400+00:00"},
+        {"subdomain": "banana.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T11:45:19.941156+00:00"}, {"subdomain": "bass.scan6", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-07-01T11:52:16.946804+00:00"},
+        {"subdomain": "battery.census", "type": "A", "value": "93.174.95.106", "last_seen":
+        "2019-07-01T04:44:41.775087+00:00"}, {"subdomain": "beastmaster.scan6", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-07-01T12:02:45.013333+00:00"},
+        {"subdomain": "blog", "type": "A", "value": "104.25.90.97", "last_seen": "2019-05-23T05:10:51.212707+00:00"},
+        {"subdomain": "blog", "type": "A", "value": "104.25.89.97", "last_seen": "2019-05-23T05:10:51.210639+00:00"},
+        {"subdomain": "blog", "type": "A", "value": "104.27.74.9", "last_seen": "2019-07-01T13:20:41.391514+00:00"},
+        {"subdomain": "blog", "type": "A", "value": "104.27.75.9", "last_seen": "2019-07-01T13:20:41.387688+00:00"},
+        {"subdomain": "blog", "type": "AAAA", "value": "2606:4700:20::6819:5a61",
+        "last_seen": "2019-05-23T05:10:51.214569+00:00"}, {"subdomain": "blog", "type":
+        "AAAA", "value": "2606:4700:20::681b:4b09", "last_seen": "2019-07-01T13:20:41.392160+00:00"},
+        {"subdomain": "blog", "type": "AAAA", "value": "2606:4700:20::681b:4a09",
+        "last_seen": "2019-07-01T13:20:41.393129+00:00"}, {"subdomain": "blog", "type":
+        "AAAA", "value": "2606:4700:20::6819:5961", "last_seen": "2019-05-23T05:10:51.213492+00:00"},
+        {"subdomain": "board.census", "type": "A", "value": "71.6.147.198", "last_seen":
+        "2019-07-01T04:46:04.128245+00:00"}, {"subdomain": "bone.scan6", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-07-01T14:04:42.319987+00:00"},
+        {"subdomain": "border.census", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T14:10:44.151827+00:00"}, {"subdomain": "burger.census", "type":
+        "A", "value": "66.240.219.146", "last_seen": "2019-07-01T14:21:28.259630+00:00"},
+        {"subdomain": "burger.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T14:31:00.864132+00:00"}, {"subdomain": "census", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-07-01T15:16:04.407385+00:00"},
+        {"subdomain": "census1", "type": "A", "value": "198.20.69.74", "last_seen":
+        "2019-07-01T15:16:38.941580+00:00"}, {"subdomain": "census10", "type": "A",
+        "value": "82.221.105.6", "last_seen": "2019-07-01T04:43:27.324314+00:00"},
+        {"subdomain": "census11", "type": "A", "value": "82.221.105.7", "last_seen":
+        "2019-07-01T04:43:36.745485+00:00"}, {"subdomain": "census12", "type": "A",
+        "value": "71.6.165.200", "last_seen": "2019-07-01T04:43:54.739482+00:00"},
+        {"subdomain": "census2", "type": "A", "value": "198.20.69.98", "last_seen":
+        "2019-07-01T04:44:35.649705+00:00"}, {"subdomain": "census3", "type": "A",
+        "value": "198.20.70.114", "last_seen": "2019-07-01T04:42:59.890928+00:00"},
+        {"subdomain": "census4", "type": "A", "value": "198.20.99.130", "last_seen":
+        "2019-07-01T04:43:28.008576+00:00"}, {"subdomain": "census6", "type": "A",
+        "value": "66.240.236.119", "last_seen": "2019-07-01T04:43:26.938751+00:00"},
+        {"subdomain": "census7", "type": "A", "value": "71.6.135.131", "last_seen":
+        "2019-07-01T04:43:18.332536+00:00"}, {"subdomain": "census8", "type": "A",
+        "value": "66.240.192.138", "last_seen": "2019-07-01T04:43:58.075609+00:00"},
+        {"subdomain": "census9", "type": "A", "value": "71.6.167.142", "last_seen":
+        "2019-07-01T04:43:09.839812+00:00"}, {"subdomain": "cli", "type": "A", "value":
+        "216.117.2.180", "last_seen": "2019-07-01T16:46:17.542657+00:00"}, {"subdomain":
+        "cloud.census", "type": "A", "value": "94.102.49.193", "last_seen": "2019-07-01T04:43:44.771874+00:00"},
+        {"subdomain": "data", "type": "A", "value": "104.25.89.97", "last_seen": "2019-05-23T08:21:37.008369+00:00"},
+        {"subdomain": "data", "type": "A", "value": "104.25.90.97", "last_seen": "2019-05-23T08:21:37.007448+00:00"},
+        {"subdomain": "data", "type": "A", "value": "104.27.74.9", "last_seen": "2019-07-01T19:38:42.937653+00:00"},
+        {"subdomain": "data", "type": "A", "value": "104.27.75.9", "last_seen": "2019-07-01T19:38:42.938065+00:00"},
+        {"subdomain": "data", "type": "AAAA", "value": "2606:4700:20::6819:5961",
+        "last_seen": "2019-05-23T08:21:37.009035+00:00"}, {"subdomain": "data", "type":
+        "AAAA", "value": "2606:4700:20::6819:5a61", "last_seen": "2019-05-23T08:21:37.009517+00:00"},
+        {"subdomain": "data", "type": "AAAA", "value": "2606:4700:20::681b:4a09",
+        "last_seen": "2019-07-01T19:38:42.939028+00:00"}, {"subdomain": "data", "type":
+        "AAAA", "value": "2606:4700:20::681b:4b09", "last_seen": "2019-07-01T19:38:42.938513+00:00"},
+        {"subdomain": "data1", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T19:38:42.497734+00:00"}, {"subdomain": "developer", "type": "A",
+        "value": "104.27.75.9", "last_seen": "2019-07-01T18:56:54.118068+00:00"},
+        {"subdomain": "developer", "type": "A", "value": "104.27.74.9", "last_seen":
+        "2019-07-01T18:56:54.119461+00:00"}, {"subdomain": "developer", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-05-27T02:25:41.751720+00:00"},
+        {"subdomain": "developer", "type": "AAAA", "value": "2606:4700:20::681b:4b09",
+        "last_seen": "2019-07-01T18:56:54.119954+00:00"}, {"subdomain": "developer",
+        "type": "AAAA", "value": "2606:4700:20::681b:4a09", "last_seen": "2019-07-01T18:56:54.120432+00:00"},
+        {"subdomain": "developers", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T20:38:30.575505+00:00"}, {"subdomain": "direct", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-07-01T04:43:29.507063+00:00"},
+        {"subdomain": "dns", "type": "A", "value": "216.117.2.180", "last_seen": "2019-07-01T21:43:49.076754+00:00"},
+        {"subdomain": "dnsr1.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T21:45:37.498882+00:00"}, {"subdomain": "dojo.census", "type":
+        "A", "value": "80.82.77.139", "last_seen": "2019-07-01T04:43:10.967723+00:00"},
+        {"subdomain": "einstein.census", "type": "A", "value": "71.6.199.23", "last_seen":
+        "2019-07-02T00:15:59.579527+00:00"}, {"subdomain": "einstein.census", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-03T18:29:23.466665+00:00"},
+        {"subdomain": "exploits", "type": "A", "value": "104.25.90.97", "last_seen":
+        "2019-05-23T10:19:31.829970+00:00"}, {"subdomain": "exploits", "type": "A",
+        "value": "104.25.89.97", "last_seen": "2019-05-23T10:19:31.831345+00:00"},
+        {"subdomain": "exploits", "type": "A", "value": "104.27.74.9", "last_seen":
+        "2019-07-02T01:46:27.434904+00:00"}, {"subdomain": "exploits", "type": "A",
+        "value": "104.27.75.9", "last_seen": "2019-07-02T01:46:27.427819+00:00"},
+        {"subdomain": "exploits", "type": "AAAA", "value": "2606:4700:20::6819:5961",
+        "last_seen": "2019-05-23T10:19:31.832832+00:00"}, {"subdomain": "exploits",
+        "type": "AAAA", "value": "2606:4700:20::681b:4b09", "last_seen": "2019-07-02T01:46:27.435360+00:00"},
+        {"subdomain": "exploits", "type": "AAAA", "value": "2606:4700:20::681b:4a09",
+        "last_seen": "2019-07-02T01:46:27.435787+00:00"}, {"subdomain": "exploits",
+        "type": "AAAA", "value": "2606:4700:20::6819:5a61", "last_seen": "2019-05-23T10:19:31.832048+00:00"},
+        {"subdomain": "fitness.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-02T03:14:13.900129+00:00"}, {"subdomain": "flower.census", "type":
+        "A", "value": "94.102.49.190", "last_seen": "2019-07-01T04:43:30.334407+00:00"},
+        {"subdomain": "gateway.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-02T05:13:23.021389+00:00"}, {"subdomain": "hat.census", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-29T14:48:55.649062+00:00"},
+        {"subdomain": "hello.data", "type": "A", "value": "104.131.0.69", "last_seen":
+        "2019-07-02T08:52:09.767738+00:00"}, {"subdomain": "hello.data", "type": "AAAA",
+        "value": "2604:a880:800:10::99:7001", "last_seen": "2019-07-02T08:52:09.769034+00:00"},
+        {"subdomain": "house.census", "type": "A", "value": "89.248.172.16", "last_seen":
+        "2019-07-01T04:43:17.420920+00:00"}, {"subdomain": "images", "type": "A",
+        "value": "104.25.89.97", "last_seen": "2019-05-23T14:42:23.048223+00:00"},
+        {"subdomain": "images", "type": "A", "value": "104.27.75.9", "last_seen":
+        "2019-07-02T11:52:13.670479+00:00"}, {"subdomain": "images", "type": "A",
+        "value": "104.27.74.9", "last_seen": "2019-07-02T11:52:13.672476+00:00"},
+        {"subdomain": "images", "type": "A", "value": "104.25.90.97", "last_seen":
+        "2019-05-23T14:42:23.046725+00:00"}, {"subdomain": "images", "type": "AAAA",
+        "value": "2606:4700:20::681b:4a09", "last_seen": "2019-07-02T11:52:13.673647+00:00"},
+        {"subdomain": "images", "type": "AAAA", "value": "2606:4700:20::6819:5a61",
+        "last_seen": "2019-05-23T14:42:23.049426+00:00"}, {"subdomain": "images",
+        "type": "AAAA", "value": "2606:4700:20::6819:5961", "last_seen": "2019-05-23T14:42:23.048620+00:00"},
+        {"subdomain": "images", "type": "AAAA", "value": "2606:4700:20::681b:4b09",
+        "last_seen": "2019-07-02T11:52:13.673024+00:00"}, {"subdomain": "inspire.census",
+        "type": "A", "value": "216.117.2.180", "last_seen": "2019-07-02T12:38:22.587042+00:00"},
+        {"subdomain": "m247.ro", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T03:19:26.925728+00:00"}, {"subdomain": "maintenance", "type":
+        "A", "value": "104.236.236.240", "last_seen": "2019-06-27T08:36:59.541593+00:00"},
+        {"subdomain": "malware-hunter.census", "type": "A", "value": "66.240.205.34",
+        "last_seen": "2019-07-01T04:43:16.129319+00:00"}, {"subdomain": "mango.threatnet",
+        "type": "A", "value": "216.117.2.180", "last_seen": "2019-07-02T21:01:51.884680+00:00"},
+        {"subdomain": "maps", "type": "A", "value": "104.25.90.97", "last_seen": "2019-05-23T23:00:23.254445+00:00"},
+        {"subdomain": "maps", "type": "A", "value": "104.27.75.9", "last_seen": "2019-07-02T21:15:21.117687+00:00"},
+        {"subdomain": "maps", "type": "A", "value": "104.27.74.9", "last_seen": "2019-07-02T21:15:21.118804+00:00"},
+        {"subdomain": "maps", "type": "A", "value": "104.25.89.97", "last_seen": "2019-05-23T23:00:23.253664+00:00"},
+        {"subdomain": "maps", "type": "AAAA", "value": "2606:4700:20::681b:4b09",
+        "last_seen": "2019-07-02T21:15:21.119871+00:00"}, {"subdomain": "maps", "type":
+        "AAAA", "value": "2606:4700:20::681b:4a09", "last_seen": "2019-07-02T21:15:21.119297+00:00"},
+        {"subdomain": "maps", "type": "AAAA", "value": "2606:4700:20::6819:5961",
+        "last_seen": "2019-05-23T23:00:23.255814+00:00"}, {"subdomain": "maps", "type":
+        "AAAA", "value": "2606:4700:20::6819:5a61", "last_seen": "2019-05-23T23:00:23.255212+00:00"},
+        {"subdomain": "mason.census", "type": "A", "value": "89.248.167.131", "last_seen":
+        "2019-07-01T04:43:27.079957+00:00"}, {"subdomain": "mqttmon", "type": "A",
+        "value": "104.156.250.217", "last_seen": "2019-06-30T06:03:15.821107+00:00"},
+        {"subdomain": "ninja.census", "type": "A", "value": "71.6.158.166", "last_seen":
+        "2019-06-30T06:59:26.145715+00:00"}, {"subdomain": "node10.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:25.849804+00:00"},
+        {"subdomain": "node11.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:34.985649+00:00"}, {"subdomain": "node12.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:26.114675+00:00"},
+        {"subdomain": "node13.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:36.607766+00:00"}, {"subdomain": "node14.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:29.174385+00:00"},
+        {"subdomain": "node15.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:30.989757+00:00"}, {"subdomain": "node16.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:29.400426+00:00"},
+        {"subdomain": "node17.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:30.920985+00:00"}, {"subdomain": "node18.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:28.846430+00:00"},
+        {"subdomain": "node19.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:30.413735+00:00"}, {"subdomain": "node1.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:28.588416+00:00"},
+        {"subdomain": "node20.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:33.986601+00:00"}, {"subdomain": "node21.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:33.244489+00:00"},
+        {"subdomain": "node22.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:31.197486+00:00"}, {"subdomain": "node23.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:31.943461+00:00"},
+        {"subdomain": "node24.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:31.167236+00:00"}, {"subdomain": "node25.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:33.496280+00:00"},
+        {"subdomain": "node2.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:29.879877+00:00"}, {"subdomain": "node3.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:33.258494+00:00"},
+        {"subdomain": "node4.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:33.006997+00:00"}, {"subdomain": "node5.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:32.369509+00:00"},
+        {"subdomain": "node6.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:32.465925+00:00"}, {"subdomain": "node7.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:30.123925+00:00"},
+        {"subdomain": "node8.tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:04:33.944000+00:00"}, {"subdomain": "node9.tracemap", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:04:36.647041+00:00"},
+        {"subdomain": "ns-01-nyc1.dns", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:14:38.245432+00:00"}, {"subdomain": "ns-01-sfo1.dns", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:14:38.149141+00:00"},
+        {"subdomain": "ns-02-nyc1.dns", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:14:38.982406+00:00"}, {"subdomain": "ns-02-sfo1.dns", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:14:38.865939+00:00"},
+        {"subdomain": "ns-03-nyc1.dns", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:14:38.968683+00:00"}, {"subdomain": "ns-03-sfo1.dns", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:14:39.028796+00:00"},
+        {"subdomain": "ns-04-nyc1.dns", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:14:38.892169+00:00"}, {"subdomain": "ns-04-sfo1.dns", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:14:39.606672+00:00"},
+        {"subdomain": "ns-05-nyc1.dns", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T07:14:39.575746+00:00"}, {"subdomain": "ns-05-sfo1.dns", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T07:14:39.591084+00:00"},
+        {"subdomain": "ns1", "type": "A", "value": "162.243.164.140", "last_seen":
+        "2019-06-27T11:23:02.458126+00:00"}, {"subdomain": "ns1", "type": "AAAA",
+        "value": "2604:a880:400:d0::6d6:2001", "last_seen": "2019-06-27T11:23:02.458526+00:00"},
+        {"subdomain": "ns2", "type": "A", "value": "138.68.199.36", "last_seen": "2019-06-30T07:27:35.546970+00:00"},
+        {"subdomain": "ns2", "type": "AAAA", "value": "2604:a880:1:20::c5b:1001",
+        "last_seen": "2019-06-30T07:27:35.549219+00:00"}, {"subdomain": "oracle.dns",
+        "type": "A", "value": "216.117.2.180", "last_seen": "2019-06-30T08:02:38.015690+00:00"},
+        {"subdomain": "pirate.census", "type": "A", "value": "71.6.146.185", "last_seen":
+        "2019-06-30T08:45:02.834646+00:00"}, {"subdomain": "poll.threatnet", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-30T09:00:31.615585+00:00"},
+        {"subdomain": "pop", "type": "CNAME", "value": "access.mail.gandi.net", "last_seen":
+        "2019-07-01T05:00:30.311287+00:00"}, {"subdomain": "private", "type": "A",
+        "value": "159.203.176.62", "last_seen": "2019-06-27T13:23:11.007907+00:00"},
+        {"subdomain": "private-eu", "type": "A", "value": "62.138.8.188", "last_seen":
+        "2019-06-30T09:16:33.415316+00:00"}, {"subdomain": "refrigerator.census",
+        "type": "A", "value": "71.6.146.130", "last_seen": "2019-07-01T04:43:14.396744+00:00"},
+        {"subdomain": "rim.census", "type": "A", "value": "85.25.43.94", "last_seen":
+        "2019-06-27T14:56:46.748955+00:00"}, {"subdomain": "ro", "type": "A", "value":
+        "216.117.2.180", "last_seen": "2019-06-30T10:09:46.051819+00:00"}, {"subdomain":
+        "rock.scan6", "type": "A", "value": "216.117.2.180", "last_seen": "2019-06-30T10:11:44.597454+00:00"},
+        {"subdomain": "scadanet1", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T10:55:58.858608+00:00"}, {"subdomain": "scan4", "type": "A", "value":
+        "216.117.2.180", "last_seen": "2019-06-30T10:56:04.266567+00:00"}, {"subdomain":
+        "scan6", "type": "A", "value": "216.117.2.180", "last_seen": "2019-06-30T10:56:09.633710+00:00"},
+        {"subdomain": "scanhub", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-27T15:49:34.069710+00:00"}, {"subdomain": "security.census", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-27T16:00:03.399991+00:00"},
+        {"subdomain": "sky.census", "type": "A", "value": "80.82.77.33", "last_seen":
+        "2019-07-01T04:43:28.959307+00:00"}, {"subdomain": "sp.tn", "type": "A", "value":
+        "216.117.2.180", "last_seen": "2019-06-30T11:42:06.046623+00:00"}, {"subdomain":
+        "static", "type": "A", "value": "104.25.90.97", "last_seen": "2019-05-24T11:38:16.215973+00:00"},
+        {"subdomain": "static", "type": "A", "value": "104.27.75.9", "last_seen":
+        "2019-06-30T12:05:52.348589+00:00"}, {"subdomain": "static", "type": "A",
+        "value": "104.27.74.9", "last_seen": "2019-06-30T12:05:52.347190+00:00"},
+        {"subdomain": "static", "type": "A", "value": "104.25.89.97", "last_seen":
+        "2019-05-24T11:38:16.213352+00:00"}, {"subdomain": "static", "type": "AAAA",
+        "value": "2606:4700:20::6819:5961", "last_seen": "2019-05-24T11:38:16.218002+00:00"},
+        {"subdomain": "static", "type": "AAAA", "value": "2606:4700:20::6819:5a61",
+        "last_seen": "2019-05-24T11:38:16.219231+00:00"}, {"subdomain": "static",
+        "type": "AAAA", "value": "2606:4700:20::681b:4b09", "last_seen": "2019-06-30T12:05:52.349453+00:00"},
+        {"subdomain": "static", "type": "AAAA", "value": "2606:4700:20::681b:4a09",
+        "last_seen": "2019-06-30T12:05:52.350397+00:00"}, {"subdomain": "static-dev",
+        "type": "A", "value": "216.117.2.180", "last_seen": "2019-06-30T12:05:43.303948+00:00"},
+        {"subdomain": "steps.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T12:09:37.323882+00:00"}, {"subdomain": "stream", "type": "A",
+        "value": "45.63.11.4", "last_seen": "2019-06-22T08:41:49.626446+00:00"}, {"subdomain":
+        "stream", "type": "A", "value": "104.248.214.35", "last_seen": "2019-06-27T17:58:11.775604+00:00"},
+        {"subdomain": "stream", "type": "A", "value": "104.248.79.11", "last_seen":
+        "2019-06-27T17:58:11.775300+00:00"}, {"subdomain": "stream", "type": "A",
+        "value": "165.227.172.203", "last_seen": "2019-05-24T11:49:59.928599+00:00"},
+        {"subdomain": "stream", "type": "A", "value": "165.227.167.146", "last_seen":
+        "2019-05-24T11:49:59.927213+00:00"}, {"subdomain": "stream", "type": "A",
+        "value": "165.227.164.231", "last_seen": "2019-05-24T11:49:59.925453+00:00"},
+        {"subdomain": "stream", "type": "A", "value": "104.248.178.241", "last_seen":
+        "2019-06-27T17:58:11.774865+00:00"}, {"subdomain": "stream", "type": "A",
+        "value": "209.222.10.250", "last_seen": "2019-06-22T08:41:49.626018+00:00"},
+        {"subdomain": "stream", "type": "A", "value": "45.77.97.111", "last_seen":
+        "2019-06-22T08:41:49.626923+00:00"}, {"subdomain": "stream", "type": "AAAA",
+        "value": "2604:a880:2:d0::2060:d001", "last_seen": "2019-06-27T17:58:11.776154+00:00"},
+        {"subdomain": "stream", "type": "AAAA", "value": "2604:a880:2:d0::20a7:8001",
+        "last_seen": "2019-06-27T17:58:11.776552+00:00"}, {"subdomain": "stream",
+        "type": "AAAA", "value": "2604:a880:2:d0::1d66:8001", "last_seen": "2019-06-27T17:58:11.776909+00:00"},
+        {"subdomain": "tesla.census", "type": "A", "value": "71.6.147.254", "last_seen":
+        "2019-06-30T12:54:09.892148+00:00"}, {"subdomain": "tesla.census", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-05-20T03:02:57.958580+00:00"},
+        {"subdomain": "thor.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-27T19:20:39.061189+00:00"}, {"subdomain": "threatnet", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-27T19:21:36.310400+00:00"},
+        {"subdomain": "tn", "type": "A", "value": "216.117.2.180", "last_seen": "2019-06-30T13:24:54.815283+00:00"},
+        {"subdomain": "tracemap", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:13.707046+00:00"}, {"subdomain": "tracemap1", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:13.685194+00:00"},
+        {"subdomain": "tracemap10", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:19.100048+00:00"}, {"subdomain": "tracemap11", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:16.768940+00:00"},
+        {"subdomain": "tracemap12", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:18.000307+00:00"}, {"subdomain": "tracemap13", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:19.347568+00:00"},
+        {"subdomain": "tracemap14", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:19.527119+00:00"}, {"subdomain": "tracemap15", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:19.255743+00:00"},
+        {"subdomain": "tracemap16", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:19.160337+00:00"}, {"subdomain": "tracemap17", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:19.207866+00:00"},
+        {"subdomain": "tracemap18", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:19.417438+00:00"}, {"subdomain": "tracemap19", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:22.102319+00:00"},
+        {"subdomain": "tracemap2", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:17.327328+00:00"}, {"subdomain": "tracemap20", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:18.113976+00:00"},
+        {"subdomain": "tracemap21", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:16.687093+00:00"}, {"subdomain": "tracemap22", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:25.284064+00:00"},
+        {"subdomain": "tracemap23", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:24.346490+00:00"}, {"subdomain": "tracemap24", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:20.530726+00:00"},
+        {"subdomain": "tracemap25", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:18.096667+00:00"}, {"subdomain": "tracemap26", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:18.855526+00:00"},
+        {"subdomain": "tracemap27", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:24.100888+00:00"}, {"subdomain": "tracemap28", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:20.689284+00:00"},
+        {"subdomain": "tracemap3", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:18.104679+00:00"}, {"subdomain": "tracemap4", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:19.262349+00:00"},
+        {"subdomain": "tracemap5", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:18.107077+00:00"}, {"subdomain": "tracemap6", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:18.108650+00:00"},
+        {"subdomain": "tracemap7", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:19.444623+00:00"}, {"subdomain": "tracemap8", "type": "A",
+        "value": "216.117.2.180", "last_seen": "2019-06-30T13:40:24.150661+00:00"},
+        {"subdomain": "tracemap9", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T13:40:22.283221+00:00"}, {"subdomain": "turtle.census", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-07-01T04:45:36.577082+00:00"},
+        {"subdomain": "weight.scan6", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-06-30T15:08:41.309477+00:00"}, {"subdomain": "welcome.scan6", "type":
+        "A", "value": "216.117.2.180", "last_seen": "2019-06-28T22:49:33.675773+00:00"},
+        {"subdomain": "wine.census", "type": "A", "value": "216.117.2.180", "last_seen":
+        "2019-07-01T04:43:29.063367+00:00"}, {"subdomain": "www", "type": "A", "value":
+        "104.25.90.97", "last_seen": "2019-05-24T21:05:21.875945+00:00"}, {"subdomain":
+        "www", "type": "A", "value": "104.25.89.97", "last_seen": "2019-05-24T21:05:21.873606+00:00"},
+        {"subdomain": "www", "type": "A", "value": "104.27.74.9", "last_seen": "2019-07-01T15:07:39.675097+00:00"},
+        {"subdomain": "www", "type": "A", "value": "104.27.75.9", "last_seen": "2019-07-01T15:07:39.724833+00:00"},
+        {"subdomain": "www", "type": "AAAA", "value": "2606:4700:20::681b:4b09", "last_seen":
+        "2019-07-01T15:07:39.773078+00:00"}, {"subdomain": "www", "type": "AAAA",
+        "value": "2606:4700:20::6819:5a61", "last_seen": "2019-05-24T21:05:21.876981+00:00"},
+        {"subdomain": "www", "type": "AAAA", "value": "2606:4700:20::681b:4a09", "last_seen":
+        "2019-07-01T15:07:39.821468+00:00"}, {"subdomain": "www", "type": "AAAA",
+        "value": "2606:4700:20::6819:5961", "last_seen": "2019-05-24T21:05:21.876480+00:00"}],
+        "subdomains": ["*", "account", "api", "banana.scan6", "bass.scan6", "battery.census",
+        "beastmaster.scan6", "blog", "board.census", "bone.scan6", "border.census",
+        "burger.census", "burger.scan6", "census", "census1", "census10", "census11",
+        "census12", "census2", "census3", "census4", "census6", "census7", "census8",
+        "census9", "cli", "cloud.census", "data", "data1", "developer", "developers",
+        "direct", "dns", "dnsr1.scan6", "dojo.census", "einstein.census", "exploits",
+        "fitness.scan6", "flower.census", "gateway.scan6", "hat.census", "hello.data",
+        "house.census", "images", "inspire.census", "m247.ro", "maintenance", "malware-hunter.census",
+        "mango.threatnet", "maps", "mason.census", "mqttmon", "ninja.census", "node1.tracemap",
+        "node10.tracemap", "node11.tracemap", "node12.tracemap", "node13.tracemap",
+        "node14.tracemap", "node15.tracemap", "node16.tracemap", "node17.tracemap",
+        "node18.tracemap", "node19.tracemap", "node2.tracemap", "node20.tracemap",
+        "node21.tracemap", "node22.tracemap", "node23.tracemap", "node24.tracemap",
+        "node25.tracemap", "node3.tracemap", "node4.tracemap", "node5.tracemap", "node6.tracemap",
+        "node7.tracemap", "node8.tracemap", "node9.tracemap", "ns-01-nyc1.dns", "ns-01-sfo1.dns",
+        "ns-02-nyc1.dns", "ns-02-sfo1.dns", "ns-03-nyc1.dns", "ns-03-sfo1.dns", "ns-04-nyc1.dns",
+        "ns-04-sfo1.dns", "ns-05-nyc1.dns", "ns-05-sfo1.dns", "ns1", "ns2", "oracle.dns",
+        "pirate.census", "poll.threatnet", "pop", "private", "private-eu", "refrigerator.census",
+        "rim.census", "ro", "rock.scan6", "scadanet1", "scan4", "scan6", "scanhub",
+        "security.census", "sky.census", "sp.tn", "static", "static-dev", "steps.scan6",
+        "stream", "tesla.census", "thor.scan6", "threatnet", "tn", "tracemap", "tracemap1",
+        "tracemap10", "tracemap11", "tracemap12", "tracemap13", "tracemap14", "tracemap15",
+        "tracemap16", "tracemap17", "tracemap18", "tracemap19", "tracemap2", "tracemap20",
+        "tracemap21", "tracemap22", "tracemap23", "tracemap24", "tracemap25", "tracemap26",
+        "tracemap27", "tracemap28", "tracemap3", "tracemap4", "tracemap5", "tracemap6",
+        "tracemap7", "tracemap8", "tracemap9", "turtle.census", "weight.scan6", "welcome.scan6",
+        "wine.census", "www"]}'
+    http_version: 
+  recorded_at: Tue, 02 Jul 2019 21:25:01 GMT
+recorded_with: VCR 4.0.0

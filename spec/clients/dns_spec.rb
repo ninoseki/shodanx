@@ -16,4 +16,11 @@ RSpec.describe Shodan::Clients::DNS, :vcr do
       expect(res).to be_a(Hash)
     end
   end
+
+  describe "#domain" do
+    it do
+      res = api.dns.domain("shodan.io")
+      expect(res).to be_a(Hash)
+    end
+  end
 end

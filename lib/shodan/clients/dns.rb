@@ -13,6 +13,11 @@ module Shodan
       def reverse(*ips)
         get("/dns/reverse", ips: ips.join(","))
       end
+
+      # Get all the subdomains and other DNS entries for the given domain. Uses 1 query credit per lookup.
+      def domain(domain)
+        get("/dns/domain/#{domain}")
+      end
     end
   end
 end

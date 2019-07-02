@@ -115,6 +115,7 @@ See `/spec` for more.
 | PUT    | /org/member/{user}                                    | N/A                                                                        |
 | DELETE | /org/member/{user}                                    | N/A                                                                        |
 | GET    | /account/profile                                      | `api.account.profile`                                                      |
+| GET    | /dns/domain/{domain}                                  | `api.dns.domain(domain)`                                                   |
 | GET    | /dns/resolve                                          | `api.dns.resolve(**hostnames)`                                             |
 | GET    | /dns/reverse                                          | `api.dns.reverse(**ips)`                                                   |
 | GET    | /tools/httpheaders                                    | `api.tools.http_headers`                                                   |
