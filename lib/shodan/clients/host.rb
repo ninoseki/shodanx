@@ -10,7 +10,7 @@ module Shodan
       # @option params [Hash]
       # @return [Hash]
       def get_by_ip(ip, **params)
-        get("/shodan/host/#{ip}", params)
+        get("/shodan/host/#{ip}", **params)
       end
 
       # This method behaves identical to "/shodan/host/search" with the only
@@ -22,7 +22,7 @@ module Shodan
         params[:query] = query
         converted_params = turn_into_query(params)
         facets = turn_into_facets(facets)
-        get("/shodan/host/count", converted_params.merge(facets))
+        get("/shodan/host/count", **converted_params.merge(facets))
       end
 
       # Search Shodan using the same query syntax as the website and use facets
@@ -33,7 +33,7 @@ module Shodan
         facets = turn_into_facets(facets)
         params[:page] = page
         params[:minify] = minify
-        get("/shodan/host/search", params.merge(facets))
+        get("/shodan/host/search", **params.merge(facets))
       end
 
       # This method lets you determine which filters are being used by
@@ -41,7 +41,7 @@ module Shodan
       def tokens(query = "", **params)
         params[:query] = query
         params = turn_into_query(params)
-        get("/shodan/host/search/tokens", params)
+        get("/shodan/host/search/tokens", **params)
       end
     end
   end

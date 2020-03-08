@@ -10,7 +10,7 @@ module Shodan
             ip: ip
           }
         }
-        post("/shodan/alert", params)
+        post("/shodan/alert", **params)
       end
 
       def delete_by_id(id)
