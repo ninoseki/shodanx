@@ -31,5 +31,6 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
 
-  config.filter_sensitive_data("<SHODAN_API_KEY>") { ENV["SHODAN_API_KEY"] || "dummy" }
+  ENV["SHODAN_API_KEY"] = ENV["SHODAN_API_KEY"] || "dummy"
+  config.filter_sensitive_data("<SHODAN_API_KEY>") { ENV["SHODAN_API_KEY"] }
 end
