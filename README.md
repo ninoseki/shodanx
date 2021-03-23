@@ -1,7 +1,7 @@
 # shodanx
 
 [![Gem Version](https://badge.fury.io/rb/shodanx.svg)](https://badge.fury.io/rb/shodanx)
-[![Build Status](https://travis-ci.org/ninoseki/shodanx.svg?branch=master)](https://travis-ci.org/ninoseki/shodanx)
+[![Ruby CI](https://github.com/ninoseki/shodanx/actions/workflows/test.yml/badge.svg)](https://github.com/ninoseki/shodanx/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/shodanx/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/shodanx?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/shodanx/badge)](https://www.codefactor.io/repository/github/ninoseki/shodanx)
 
@@ -88,7 +88,7 @@ See `/spec` for more.
 ### [REST API](https://developer.shodan.io/api)
 
 | Method | URI                                                   | API method                                                                 |
-| ------ | ----------------------------------------------------- | -------------------------------------------------------------------------- |
+|--------|-------------------------------------------------------|----------------------------------------------------------------------------|
 | GET    | /shodan/host/{ip}                                     | `api.host.get_by_ip(ip, **params)`                                         |
 | GET    | /shodan/host/count                                    | `api.host.count(query = "", facets: {}, **params)`                         |
 | GET    | /shodan/host/search                                   | `api.host.search(query = "", facets: {}, page: 1, minify: true, **params)` |
@@ -127,7 +127,7 @@ See `/spec` for more.
 ### [Exploits API](https://developer.shodan.io/api/exploits/rest)
 
 | Method | URI     | API method                                                       |
-| ------ | ------- | ---------------------------------------------------------------- |
+|--------|---------|------------------------------------------------------------------|
 | GET    | /search | `api.exploits.search(query = "", facets: {}, page: 1, **params)` |
 | GET    | /count  | `api.exploits.count(query = "", facets: {}, page: 1, **params)`  |
 
